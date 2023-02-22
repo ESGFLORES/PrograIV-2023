@@ -158,7 +158,7 @@
                 listarClientes(){
                     this.clientes = JSON.parse( localStorage.getItem('clientes') || "[]" )
                         .filter(cliente=>cliente.nombre.toLowerCase().indexOf(this.buscar.toLowerCase())>-1)||
-                        cliente.codigo.indexOf(this.buscar)>-1;
+                                    cliente.codigo.indexOf(this.buscar)>-1;
                 }
             },
             created(){
